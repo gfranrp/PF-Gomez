@@ -1,11 +1,3 @@
-.lista {
-    @include menus;
-
-    text-align: center;
-    line-height: $fuente-grande;
-
-}
-
 .pizzas {
     @include menus;
 
@@ -16,10 +8,13 @@
 
 .pizzas1 {
     @include menus;
-
+    text-align: center;
     border: solid 3px black;
+    padding-left: $fuente-grande;
+    background-color: $color-secundario;
+    line-height: $fuente-media;
 
-    background-color: $color-secundario
+
 }
 
 .titulosmenus {

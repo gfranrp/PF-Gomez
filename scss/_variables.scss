@@ -3,6 +3,7 @@ $color-principal: white;
 $color-secundario: rgb(49, 47, 47);
 $color-terciario: rgb(35, 35, 35);
 $color-invertido: black;
+$color-hover: rgb(176, 0, 0);
 /*tamaño de fuentes*/
 $fuente-grande: 4.688rem;
 $fuente-media: 2.188rem;
@@ -36,6 +37,7 @@ $funte-principal: 'Montserrat', sans-serif;
     padding: 0;
     font-size: $fuente-chica;
 
+
 }
 
 @mixin separaciones {
@@ -49,6 +51,5 @@ $separaciones: solid 1px $color-terciario;
     padding: 35px;
     margin: 0;
     display: block;
-    text-align: center;
     color: $color-principal;
 }

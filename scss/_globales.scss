@@ -1,14 +1,8 @@
 body,
 header {
     background-color: $color-principal;
-}
-
-body {
+    font-family: $funte-principal;
     text-align: center;
-}
-
-li,
-ul {
     list-style-type: none;
 }
 
@@ -16,16 +10,8 @@ h1 {
     color: $color-principal;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-li,
-ul,
-.navbar-brand {
-    font-family: $funte-principal;
+p {
+    font-family: 'Roboto Slab', serif;
 }
 
 .pres2,
@@ -34,16 +20,23 @@ ul,
     @include separaciones
 }
 
-.btn,
-.btn-dark {
+.btn {
     padding: 15px;
-    color: #ffffff;
     text-decoration: none;
     font-family: $funte-principal;
     border-radius: 50px;
-    border-color: $color-invertido;
+    border: none;
     background-color: $color-terciario;
     font-size: $fuente-chica;
+    color: $color-principal;
+    transition: all 0.6s;
+
+    &:hover {
+        background-color: $color-secundario;
+        color: white;
+        transform: scale(1.1, 1.05);
+    }
+
 }
 
 a {
@@ -69,6 +62,7 @@ ul {
     @include nav;
     gap: 30px;
     list-style-type: none;
+    padding-left: 150px;
 }
 
 li a {
@@ -76,9 +70,10 @@ li a {
     border-radius: 10px;
     padding: 5px 10px;
     text-decoration: none;
+    transition: all 0.5s;
 
     &:hover {
-        color: rgb(176, 0, 0)
+        color: $color-hover;
     }
 }
 
@@ -97,6 +92,9 @@ footer {
 }
 
 .redes {
-    margin-top: 50px;
-    margin-bottom: 90px;
+    font-size: $fuente-media;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+
 }

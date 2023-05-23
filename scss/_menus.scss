@@ -1,9 +1,16 @@
 .pizzas {
     @include menus;
-
     border: solid 3px $color-invertido;
-
     background-color: $color-terciario;
+
+    .titulosmenus {
+        @include menus;
+        font-size: $fuente-media;
+        margin-left: 15px;
+        margin-top: 15px;
+        margin-bottom: 30px;
+
+    }
 }
 
 .pizzas1 {
@@ -13,15 +20,6 @@
     padding-left: $fuente-grande;
     background-color: $color-secundario;
     line-height: $fuente-media;
-
-
-}
-
-.titulosmenus {
-    @include menus;
-    font-size: 35px;
-    margin-left: 15px;
-    margin-top: 15px;
-    margin-bottom: 30px;
-
+    text-decoration: none;
+    list-style: none
 }
